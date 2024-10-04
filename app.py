@@ -132,3 +132,8 @@ async def answer(request: dict):
     return JSONResponse({
         "answer": answer,
     }, status_code=200)
+
+
+if __name__ == '__main__':
+    import uvicorn
+    uvicorn.run(app)
